@@ -27,8 +27,8 @@ Bu depo uygulamanın **yayın deposudur**. Kurulum paketleri, sürüm notları v
 
 | Platform | Durum | İndirme |
 | --- | --- | --- |
-| macOS 12+ · Apple Silicon (M1 ve sonrası) | 0.1.3 yayımlandı | [DMG kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.3/Kasa_0.1.3_aarch64.dmg) |
-| macOS · bağımsız CLI · Apple Silicon | 0.1.3 yayımlandı | [kasa terminal programı](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.3/kasa_0.1.3_darwin-aarch64) |
+| macOS 12+ · Apple Silicon (M1 ve sonrası) | 0.1.4 yayımlandı | [DMG kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.4/Kasa_0.1.4_aarch64.dmg) |
+| macOS · bağımsız CLI · Apple Silicon | 0.1.4 yayımlandı | [kasa terminal programı](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.4/kasa_0.1.4_darwin-aarch64) |
 | macOS · Intel | Henüz paket yayımlanmadı | — |
 | Windows | Henüz paket yayımlanmadı | — |
 | Ubuntu/Debian | Henüz paket yayımlanmadı | — |
@@ -105,7 +105,7 @@ kasa --help
 
 ### 1. Kasanı oluştur
 
-**Yeni oluştur** seçeneğini aç. Mevcut kaynak kodu projenin dışında, kasaya ait ayrı bir klasör seç. En az **12 karakterli**, uzun ve benzersiz bir ana parola belirle.
+**Yeni oluştur** seçeneğini aç. Mevcut kaynak kodu projenin dışında, kasaya ait ayrı bir klasör seç. En az **8 karakterli**, uzun ve benzersiz bir ana parola belirle.
 
 Git yedekleme bölümünde üç yolun var:
 
