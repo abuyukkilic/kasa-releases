@@ -10,7 +10,7 @@
   &nbsp; · &nbsp;
   <a href="#kurulum">Kurulum</a>
   &nbsp; · &nbsp;
-  <a href="#ilk-kullanım">İlk kullanım</a>
+  <a href="#ilk-kullanim">İlk kullanım</a>
   &nbsp; · &nbsp;
   <a href="#hakkımızda">Hakkımızda</a>
 </p>
@@ -98,6 +98,8 @@ kasa --help
 ```
 
 `export PATH` bu terminal oturumu içindir. Kalıcı kullanmak için aynı satırı kullandığın kabuğun başlangıç dosyasına, örneğin `~/.zshrc` içine ekle. Ayrı kopyaladığın CLI’ı yeni sürümde yeniden kopyalayarak güncelle.
+
+<a id="ilk-kullanim"></a>
 
 ## İlk kullanım
 
