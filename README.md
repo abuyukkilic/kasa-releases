@@ -6,7 +6,7 @@
 <p align="center"><strong>Bilgisayar değişir. Düzenin kalır.</strong></p>
 <p align="center">API anahtarların, özel dosyaların ve çalışma ortamın.<br/>Tek şifreli kasada, senin kontrolünde.</p>
 <p align="center">
-  <a href="https://github.com/abuyukkilic/kasa-releases/releases/latest"><strong>↓ En güncel sürümü indir</strong></a>
+  <a href="https://github.com/abuyukkilic/kasa-releases/releases/tag/v0.1.9"><strong>↓ En güncel sürümü indir</strong></a>
   &nbsp; · &nbsp;
   <a href="#kurulum">Kurulum</a>
   &nbsp; · &nbsp;
@@ -27,20 +27,21 @@ Bu depo uygulamanın **yayın deposudur**. Kurulum paketleri, sürüm notları v
 
 | Platform | Durum | İndirme |
 | --- | --- | --- |
-| macOS 12+ · Apple Silicon (M1 ve sonrası) | 0.1.4 yayımlandı | [DMG kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.4/Kasa_0.1.4_aarch64.dmg) |
-| macOS · bağımsız CLI · Apple Silicon | 0.1.4 yayımlandı | [kasa terminal programı](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.4/kasa_0.1.4_darwin-aarch64) |
+| macOS 12+ · Apple Silicon (M1 ve sonrası) | 0.1.9 · Apple noter onaylı | [DMG kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.9/Kasa_0.1.9_aarch64.dmg) |
+| macOS · bağımsız CLI · Apple Silicon | 0.1.9 yayımlandı | [kasa terminal programı](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.9/kasa_0.1.9_darwin-aarch64) |
 | macOS · Intel | Henüz paket yayımlanmadı | — |
-| Windows | Henüz paket yayımlanmadı | — |
+| Windows · x64 | 0.1.4 yayımlandı | [Kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.4/Kasa_0.1.4_windows-x86_64-setup.exe) |
 | Ubuntu/Debian | Henüz paket yayımlanmadı | — |
 
-[En güncel yayın ve sürüm notları →](https://github.com/abuyukkilic/kasa-releases/releases/latest)
+[En güncel yayın ve sürüm notları →](https://github.com/abuyukkilic/kasa-releases/releases/tag/v0.1.9)
 
-> **Erken sürüm:** Mevcut macOS paketi Apple Developer kimliğiyle imzalanmış ve Apple tarafından notarize edilmiş bir dağıtım değildir. macOS güvenlik denetimleri açılışı engelleyebilir. Uygulama içi güncelleme paketinin imzası, Apple imzası/notarizasyonundan ayrı bir doğrulamadır.
+> **macOS 0.1.9:** BEY Bilgisayar Developer ID ile imzalıdır ve Apple noter onayından geçmiştir. İlk hesap kaydı kasa biçimini yükseltir; Hesaplar özelliği kullanılan kasaları tüm cihazlarda 0.1.9 veya üstü sürümle açmalısın. Windows 0.1.9 paketi henüz yoktur.
 
 ## Neler yapabilirsin?
 
 | İhtiyaç | Kasa’da karşılığı |
 | --- | --- |
+| Hesap ve bağlantıları saklamak | Giriş hesabı, web sitesi, sunucu ve veritabanı; kullanıcı adı, parola, host, port ve özel notlar |
 | API anahtarlarını bir arada tutmak | Başlangıçta gizlenen sırlar; gösterme, düzenleme ve kopyalama |
 | Özel dosyalarını taşımak | Özgün baytlarıyla saklanan `.env`, JSON, `.plist` ve diğer küçük dosyalar |
 | Projeleri ayırmak | **Ortak** alanı ve birbirinden bağımsız proje grupları |
@@ -66,7 +67,7 @@ Dosyaları seçerek veya sürükleyip bırakarak ekle. Platform başına hedef k
 
 ## Kurulum
 
-1. [En güncel yayını](https://github.com/abuyukkilic/kasa-releases/releases/latest) aç ve Mac’in için `.dmg` dosyasını indir. Şu anki paket Apple Silicon içindir.
+1. [En güncel yayını](https://github.com/abuyukkilic/kasa-releases/releases/tag/v0.1.9) aç ve Mac’in için `.dmg` dosyasını indir. Şu anki paket Apple Silicon içindir.
 2. DMG’yi aç; **Kasa.app** dosyasını **Uygulamalar / Applications** klasörüne kopyala.
 3. Kasa’yı Applications klasöründen başlat.
 4. Git’in kurulu olduğunu kontrol et: terminalde `git --version`. Kasa yerel kasası için de Git kullanır. GitHub hesabı ise yerel kullanım için gerekmez.
@@ -118,6 +119,8 @@ Git yedekleme bölümünde üç yolun var:
 ### 2. Bir proje ve kayıt ekle
 
 Sol taraftan proje oluştur veya **Ortak** alanını seç. **Sırlar** sekmesinden API anahtarını, **Dosyalar** sekmesinden özel dosyanı ekle. Dosyalar sürükleyip bırakılarak da eklenebilir.
+
+**Hesaplar** sekmesinden web girişlerini, sunucuları ve veritabanlarını ekleyebilirsin. Sol menüde projeleri ara; kayıt aramasında **Tüm projeler** seçerek Ortak dahil bütün kayıtlarında ara. Parolalar ve özel notlar aramaya dahil edilmez.
 
 Ortak ve proje grupları bağımsızdır; kendiliğinden birleştirilmez.
 
@@ -185,6 +188,8 @@ Kasayı açmak AI erişimini kendiliğinden açmaz. **AI erişimi** ekranında:
 AI kendine izin veremez veya kasayı açamaz. Ekleme izni mevcut kayıtları değiştirme ya da silme yetkisi vermez. **Kilitle**, **AI erişimini şimdi kapat**, pencereyi kapatma veya uygulamadan çıkış izinleri iptal eder. Süresiz izin yeniden başlatmada otomatik açılmaz.
 
 ## Güncellemeler
+
+macOS 0.1.9 paketini yukarıdaki bağlantıdan elle indirebilirsin. Windows 0.1.9 paketi tamamlanana kadar genel otomatik güncelleme kanalı 0.1.4 sürümünde tutuluyor.
 
 Kasa açılışta ve **6 saatte bir** yeni sürüm kontrolü yapar. **Biz kimiz? → Güncellemeleri kontrol et** ile istediğin zaman kontrol edebilirsin.
 
