@@ -1,3 +1,21 @@
+Kasa 0.1.10
+
+- macOS yerel AI bağlantısında istemci isteği geciktiğinde oluşabilen bağlantı kopması giderildi.
+
+- AI izin kapsamı ve süre tercihi her bilgisayarda, her kasa için bir kez kaydedilebilir.
+- Kasa ana parolayla açıldığında kayıtlı izin doğrulanıp otomatik etkinleştirilir.
+- Varsayılan erişim süresi süresizdir; süreli veya yalnız mevcut oturum için izin de seçilebilir.
+- Kayıtlı izinler panelde otomatik doldurulur; ayrıntılı form yalnız gerektiğinde açılır.
+- Bu bilgisayardaki izni kaldır seçeneği etkin erişimi kapatır ve yerel tercihi siler.
+- Tercihler kasa/Git deposu dışında tutulur; ana parola ve oturum token'ı kaydedilmez.
+- Kasa kilitliyken erişim kapalı kalır. Geçersiz tercihler kasa açılmasını engellemez, AI erişimini kapalı tutar.
+
+Kasa biçimi ve mevcut parolalar değişmez. Windows yükleyicisi çevrimdışı önkoşulları içerir ve Tauri güncelleme anahtarıyla imzalanır; Windows Authenticode yayıncı imzası içermez.
+
+Bu yayın macOS Apple Silicon içindir. Paket BEY Bilgisayar Developer ID ile imzalıdır ve Apple noter onayından geçmiştir. Windows için son paket 0.1.9 sürümüdür.
+
+---
+
 Kasa 0.1.9
 
 - macOS Apple Silicon paketi BEY Bilgisayar Developer ID ile imzalanır ve Apple noter onayından geçirilir.

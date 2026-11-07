@@ -6,7 +6,7 @@
 <p align="center"><strong>Bilgisayar değişir. Düzenin kalır.</strong></p>
 <p align="center">API anahtarların, özel dosyaların ve çalışma ortamın.<br/>Tek şifreli kasada, senin kontrolünde.</p>
 <p align="center">
-  <a href="https://github.com/abuyukkilic/kasa-releases/releases/tag/v0.1.9"><strong>↓ En güncel sürümü indir</strong></a>
+  <a href="https://github.com/abuyukkilic/kasa-releases/releases/latest"><strong>↓ En güncel sürümü indir</strong></a>
   &nbsp; · &nbsp;
   <a href="#kurulum">Kurulum</a>
   &nbsp; · &nbsp;
@@ -27,15 +27,15 @@ Bu depo uygulamanın **yayın deposudur**. Kurulum paketleri, sürüm notları v
 
 | Platform | Durum | İndirme |
 | --- | --- | --- |
-| macOS 12+ · Apple Silicon (M1 ve sonrası) | 0.1.9 · Apple noter onaylı | [DMG kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.9/Kasa_0.1.9_aarch64.dmg) |
-| macOS · bağımsız CLI · Apple Silicon | 0.1.9 yayımlandı | [kasa terminal programı](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.9/kasa_0.1.9_darwin-aarch64) |
+| macOS 12+ · Apple Silicon (M1 ve sonrası) | 0.1.10 · Apple noter onaylı | [DMG kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.10/Kasa_0.1.10_aarch64.dmg) |
+| macOS · bağımsız CLI · Apple Silicon | 0.1.10 yayımlandı | [kasa terminal programı](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.10/kasa_0.1.10_darwin-aarch64) |
 | macOS · Intel | Henüz paket yayımlanmadı | — |
-| Windows · x64 | 0.1.4 yayımlandı | [Kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.4/Kasa_0.1.4_windows-x86_64-setup.exe) |
+| Windows · x64 | 0.1.9 yayımlandı | [Kurulum paketi](https://github.com/abuyukkilic/kasa-releases/releases/download/v0.1.9/Kasa_0.1.9_windows-x86_64-setup.exe) |
 | Ubuntu/Debian | Henüz paket yayımlanmadı | — |
 
-[En güncel yayın ve sürüm notları →](https://github.com/abuyukkilic/kasa-releases/releases/tag/v0.1.9)
+[En güncel yayın ve sürüm notları →](https://github.com/abuyukkilic/kasa-releases/releases/latest)
 
-> **macOS 0.1.9:** BEY Bilgisayar Developer ID ile imzalıdır ve Apple noter onayından geçmiştir. İlk hesap kaydı kasa biçimini yükseltir; Hesaplar özelliği kullanılan kasaları tüm cihazlarda 0.1.9 veya üstü sürümle açmalısın. Windows 0.1.9 paketi henüz yoktur.
+> **macOS 0.1.10:** BEY Bilgisayar Developer ID ile imzalıdır ve Apple noter onayından geçmiştir. İlk hesap kaydı kasa biçimini yükseltir; Hesaplar özelliği kullanılan kasaları tüm cihazlarda 0.1.9 veya üstü sürümle açmalısın. Windows için son paket 0.1.9 sürümüdür.
 
 ## Neler yapabilirsin?
 
@@ -67,7 +67,7 @@ Dosyaları seçerek veya sürükleyip bırakarak ekle. Platform başına hedef k
 
 ## Kurulum
 
-1. [En güncel yayını](https://github.com/abuyukkilic/kasa-releases/releases/tag/v0.1.9) aç ve Mac’in için `.dmg` dosyasını indir. Şu anki paket Apple Silicon içindir.
+1. [En güncel yayını](https://github.com/abuyukkilic/kasa-releases/releases/latest) aç ve Mac’in için `.dmg` dosyasını indir. Şu anki paket Apple Silicon içindir.
 2. DMG’yi aç; **Kasa.app** dosyasını **Uygulamalar / Applications** klasörüne kopyala.
 3. Kasa’yı Applications klasöründen başlat.
 4. Git’in kurulu olduğunu kontrol et: terminalde `git --version`. Kasa yerel kasası için de Git kullanır. GitHub hesabı ise yerel kullanım için gerekmez.
@@ -177,19 +177,19 @@ CLI kasa işlemleri için parolayı gizli girdiden ister; masaüstünün açık 
 
 ## AI araçlarıyla kullanım
 
-Kasayı açmak AI erişimini kendiliğinden açmaz. **AI erişimi** ekranında:
+İlk AI izni kullanıcı onayı gerektirir. **AI erişimi** ekranında:
 
 1. Tek veya birden çok proje seç; istersen tüm projelere izin ver.
 2. Sır ve dosya okuma izinlerini belirle.
-3. Süreyi seç veya mevcut uygulama oturumu için süresiz izin ver.
+3. Süreyi seç veya süresiz izin ver. İstersen izni bu bilgisayarda hatırla; kasa açıldığında kaydedilen kapsam otomatik etkinleşir.
 4. Gerekliyse **ayrıca** tek bir projeye yeni kayıt ekleme izni aç ve o projenin kaynak klasörünü seç.
 5. Ana parolanla onayla; ekrandaki MCP yapılandırmasını AI aracına ekle.
 
-AI kendine izin veremez veya kasayı açamaz. Ekleme izni mevcut kayıtları değiştirme ya da silme yetkisi vermez. **Kilitle**, **AI erişimini şimdi kapat**, pencereyi kapatma veya uygulamadan çıkış izinleri iptal eder. Süresiz izin yeniden başlatmada otomatik açılmaz.
+AI kendine izin veremez veya kasayı açamaz. Ekleme izni mevcut kayıtları değiştirme ya da silme yetkisi vermez. Kilitlemek, pencereyi kapatmak veya çıkış yapmak etkin erişimi kapatır. Hatırlanan izin kasayı yeniden açınca etkinleşir; **Bu bilgisayardaki izni kaldır** ile kalıcı tercih silinir. Ana parola ve oturum anahtarı kaydedilmez; tercihler Git’e gönderilmez.
 
 ## Güncellemeler
 
-macOS 0.1.9 paketini yukarıdaki bağlantıdan elle indirebilirsin. Windows 0.1.9 paketi tamamlanana kadar genel otomatik güncelleme kanalı 0.1.4 sürümünde tutuluyor.
+macOS 0.1.10 paketini yukarıdaki bağlantıdan indirebilir veya uygulama içinden güncelleyebilirsin. Windows için son yayımlanan sürüm 0.1.9’dur; Windows paketi önceki sürümün bağlantısından indirilebilir.
 
 Kasa açılışta ve **6 saatte bir** yeni sürüm kontrolü yapar. **Biz kimiz? → Güncellemeleri kontrol et** ile istediğin zaman kontrol edebilirsin.
 
